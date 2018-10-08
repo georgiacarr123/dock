@@ -1,9 +1,9 @@
-describe('weather', function(){
+describe('weather', function () {
     let weather
-    beforeEach(function(){
+    beforeEach(function () {
         weather = new Weather();
     });
-    it('can be stormy', function(){
+    it('can be stormy', function () {
         spyOn(Math, "random").and.returnValue(0);
 
         expect(weather.isStormy()).toBe(true);
